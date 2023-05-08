@@ -28,7 +28,7 @@ function Header() {
                 <span className="text-white">5</span>
               </div>
             </li>
-            <li>
+            <li className="cursor-pointer">
               <img
                 className="w-12 h-12 rounded-full"
                 src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
