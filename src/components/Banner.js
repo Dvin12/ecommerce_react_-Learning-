@@ -14,10 +14,13 @@ function Banner() {
   };
   return (
     <div className="w-full h-auto overflow-hidden">
-      <div className="w-screen h-fit relative">
+      <div
+        className="w-screen h-[650
+        px] relative"
+      >
         <div
           style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-          className="w-auto h-full flex transition-all duration-1000"
+          className="w-[400vw] h-[720px] flex transition-all duration-1000"
         >
           <img
             className="w-screen h-full object-cover"
@@ -37,7 +40,7 @@ function Banner() {
         </div>
         <div
           className="absolute w-fit
-        bottom-10 left-0 right-0 mx-auto flex gap-96 text-6xl text-zinc-600 "
+        bottom-10 left-0 right-0 mx-auto flex gap-20 text-6xl text-amber-400 "
         >
           <button
             onClick={previousSlide}
