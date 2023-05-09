@@ -1,0 +1,101 @@
+{
+  "laptops": [
+    {
+      "id": 1,
+      "brand": "Dell",
+      "model": "Inspiron 15",
+      "processor": "Intel Core i5-1135G7",
+      "ram": "8 GB DDR4",
+      "storage": "256 GB SSD",
+      "price": "$699.99",
+      "discounted_price": "$649.99",
+      "image": "/assets/images/Inspiron15.jpg"
+    },
+    {
+      "id": 2,
+      "brand": "HP",
+      "model": "Pavilion x360",
+      "processor": "Intel Core i7-1165G7",
+      "ram": "16 GB DDR4",
+      "storage": "512 GB SSD",
+      "price": "$1,099.99",
+      "discounted_price": "$999.99",
+      "image": "/assets/images/Pavilionx360.png"
+    },
+    {
+      "id": 3,
+      "brand": "Lenovo",
+      "model": "ThinkPad T14s",
+      "processor": "AMD Ryzen 7 Pro 4750U",
+      "ram": "16 GB DDR4",
+      "storage": "512 GB SSD",
+      "price": "$1,399.99",
+      "discounted_price": "$1,299.99",
+      "image": "/assets/images/ThinkPadT14s.jpg"
+    },
+    {
+      "id": 4,
+      "brand": "Apple",
+      "model": "MacBook Air",
+      "processor": "M1 chip with 8-core CPU",
+      "ram": "8 GB unified memory",
+      "storage": "256 GB SSD",
+      "price": "$999.99",
+      "discounted_price": "$949.99",
+      "image": "/assets/images/MacBookAir.jpg"
+    },
+    {
+      "id": 5,
+      "brand": "ASUS",
+      "model": "ZenBook Flip S",
+      "processor": "Intel Core i7-1165G7",
+      "ram": "16 GB LPDDR4X",
+      "storage": "1 TB PCIe NVMe SSD",
+      "price": "$1,499.99",
+      "discounted_price": "$1,399.99",
+      "image": "/assets/images/ZenBook.png"
+    }
+  ],
+  "cameras": [
+    {
+      "id": 1,
+      "brand": "Canon",
+      "model": "EOS Rebel T7",
+      "sensor": "24.1 MP APS-C CMOS",
+      "iso_range": "100-6400",
+      "price": "$449.99",
+      "discounted_price": "$399.99",
+      "image": "/assets/images/E0SRebel.jpg"
+    },
+    {
+      "id": 2,
+      "brand": "Nikon",
+      "model": "D5600",
+      "sensor": "24.2 MP APS-C CMOS",
+      "iso_range": "100-25600",
+      "price": "$799.99",
+      "discounted_price": "$749.99",
+      "image": "/assets/images/D5600.jpg"
+    },
+    {
+      "id": 3,
+      "brand": "Sony",
+      "model": "Alpha a7 III",
+      "sensor": "24.2 MP Full-Frame Exmor R CMOS",
+      "iso_range": "100-51200",
+      "price": "$1,999.99",
+      "discounted_price": "$1,899.99",
+      "image": "/assets/images/Alphaa7.jpg"
+    },
+    {
+      "id": 4,
+      "brand": "Fujifilm",
+      "model": "X-T4",
+      "sensor": "26.1 MP APS-C X-Trans CMOS 4",
+      "iso_range": "160-12800",
+      "price": "$1,699.99",
+      "discounted_price": "$1,450.45",
+      "image": "/assets/images/X-T4.jpg"
+    }
+  ]
+}
