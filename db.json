@@ -97,5 +97,60 @@
       "discounted_price": "$1,450.45",
       "image": "/assets/images/X-T4.jpg"
     }
+  ],
+
+  "discounted": [
+    {
+      "id": 1,
+      "brand": "Dell",
+      "model": "Inspiron 15",
+      "processor": "Intel Core i5-1135G7",
+      "ram": "8 GB DDR4",
+      "storage": "256 GB SSD",
+      "price": "$699.99",
+      "discounted_price": "$649.99",
+      "image": "/assets/images/Inspiron15.jpg"
+    },
+    {
+      "id": 2,
+      "brand": "Sony",
+      "model": "Alpha a7 III",
+      "sensor": "24.2 MP Full-Frame Exmor R CMOS",
+      "iso_range": "100-51200",
+      "price": "$1,999.99",
+      "discounted_price": "$1,899.99",
+      "image": "/assets/images/Alphaa7.jpg"
+    },
+    {
+      "id": 3,
+      "brand": "Fujifilm",
+      "model": "X-T4",
+      "sensor": "26.1 MP APS-C X-Trans CMOS 4",
+      "iso_range": "160-12800",
+      "price": "$1,699.99",
+      "discounted_price": "$1,450.45",
+      "image": "/assets/images/X-T4.jpg"
+    },
+    {
+      "id": 4,
+      "brand": "Canon",
+      "model": "EOS Rebel T7",
+      "sensor": "24.1 MP APS-C CMOS",
+      "iso_range": "100-6400",
+      "price": "$449.99",
+      "discounted_price": "$399.99",
+      "image": "/assets/images/E0SRebel.jpg"
+    },
+    {
+      "id": 5,
+      "brand": "ASUS",
+      "model": "ZenBook Flip S",
+      "processor": "Intel Core i7-1165G7",
+      "ram": "16 GB LPDDR4X",
+      "storage": "1 TB PCIe NVMe SSD",
+      "price": "$1,499.99",
+      "discounted_price": "$1,399.99",
+      "image": "/assets/images/ZenBook.png"
+    }
   ]
 }
