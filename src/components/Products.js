@@ -1,3 +1,4 @@
+import ProductCard from "./ProductCard";
 function Products() {
   return (
     <div className="py-14">
@@ -11,6 +12,9 @@ function Products() {
           nice, cherry blossom shots! Up to{" "}
           <span className="font-bold">30%</span> off!
         </p>
+      </div>
+      <div className="max-w-screen-xl mx-auto">
+        <ProductCard></ProductCard>
       </div>
     </div>
   );
