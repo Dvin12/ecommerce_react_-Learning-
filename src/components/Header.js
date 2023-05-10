@@ -1,6 +1,7 @@
 import { CgShoppingCart } from "react-icons/cg";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+
 function Header() {
   const productData = useSelector((state) => state.store.productData);
   console.log(productData);
@@ -28,12 +29,14 @@ function Header() {
             <li className="cursor-pointer text-slate-800 hover:text-amber-600 transition-all duration-300">
               Shop
             </li>
-            <li className="relative cursor-pointer">
-              <CgShoppingCart className="text-3xl" />
-              <div className="w-5 h-5 rounded-full bg-orange-500 absolute bottom-4 left-5 flex items-center justify-center">
-                <span className="text-white">{productData.length}</span>
-              </div>
-            </li>
+            <Link to="/cart">
+              <li className="relative cursor-pointer">
+                <CgShoppingCart className="text-3xl" />
+                <div className="w-5 h-5 rounded-full bg-orange-500 absolute bottom-4 left-5 flex items-center justify-center">
+                  <span className="text-white">{productData.length}</span>
+                </div>
+              </li>
+            </Link>
             <li className="cursor-pointer">
               <img
                 className="w-12 h-12 rounded-full"

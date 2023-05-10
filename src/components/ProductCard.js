@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import { addToCart } from "../redux/storeSlice";
+import { ToastContainer, toast } from "react-toastify";
 
 function ProductCard({ product }) {
   const dispatch = useDispatch();
@@ -48,13 +49,14 @@ function ProductCard({ product }) {
                 dispatch(
                   addToCart({
                     id: product.id,
-                    title: product.title,
+                    brand: product.brand,
+                    model: product.model,
                     image: product.image,
                     price: product.price,
                     quantity: 1,
                     description: product.description,
                   })
-                )
+                ) & toast.success(`${product.brand} ${product.model} added`)
               }
               className="absolute z-20 w-[100px] text-gray-800 hover:text-gray-900 flex  items-center gap-1 top-0 transform -translate-x-32 group-hover:translate-x-8 transition-transform duration-500 cursor-pointer"
             >
@@ -66,6 +68,18 @@ function ProductCard({ product }) {
           <p className="bg-black text-white font-semibold px-6 py-1">SALE</p>
         </div>
       </div>
+      <ToastContainer
+        position="top-left"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      ></ToastContainer>
     </article>
   );
 }
