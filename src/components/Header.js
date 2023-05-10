@@ -1,16 +1,19 @@
 import { CgShoppingCart } from "react-icons/cg";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <header className="w-full h-20 bg-white border-b-[1px] border-b-gray-800 font-titleFont sticky top-0 z-50">
       <div className="max-w-screen-xl h-full mx-auto flex justify-between items-center">
-        <div>
-          <h1
-            className="text-3xl font-bold tracking-wide  text-lime-500
+        <Link to="/">
+          <div>
+            <h1
+              className="text-3xl font-bold tracking-wide  text-lime-500
            "
-          >
-            LOGO
-          </h1>
-        </div>
+            >
+              LOGO
+            </h1>
+          </div>
+        </Link>
         <div>
           <ul className="flex items-center gap-8">
             <li className="cursor-pointer text-slate-800 hover:text-amber-600 transition-all duration-300">

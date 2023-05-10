@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Cart from "./pages/Cart";
 import Product from "./components/Product";
-import { discountedData, productData } from "./api/Api";
+import { productData } from "./api/Api";
 
 import {
   createBrowserRouter,
@@ -17,6 +17,7 @@ function Layout() {
   return (
     <div>
       <Header></Header>
+      <ScrollRestoration></ScrollRestoration>
       <Outlet></Outlet>
       <Footer></Footer>
     </div>
