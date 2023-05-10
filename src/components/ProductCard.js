@@ -1,7 +1,10 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
+import { addToCart } from "../redux/storeSlice";
 
 function ProductCard({ product }) {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const id = product.model;
   const idString = (id) => {
@@ -40,7 +43,21 @@ function ProductCard({ product }) {
               <p className="line-through text-gray-700">{product.price}</p>
               <p className="font-semibold">{product.discounted_price}</p>
             </div>
-            <p className="absolute z-20 w-[100px] text-gray-800 hover:text-gray-900 flex  items-center gap-1 top-0 transform -translate-x-32 group-hover:translate-x-8 transition-transform duration-500 cursor-pointer">
+            <p
+              onClick={() =>
+                dispatch(
+                  addToCart({
+                    id: product.id,
+                    title: product.title,
+                    image: product.image,
+                    price: product.price,
+                    quantity: 1,
+                    description: product.description,
+                  })
+                )
+              }
+              className="absolute z-20 w-[100px] text-gray-800 hover:text-gray-900 flex  items-center gap-1 top-0 transform -translate-x-32 group-hover:translate-x-8 transition-transform duration-500 cursor-pointer"
+            >
               add to cart
             </p>
           </div>
