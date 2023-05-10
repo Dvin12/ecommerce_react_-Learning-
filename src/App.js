@@ -3,6 +3,7 @@ import Home from "./pages/home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Cart from "./pages/Cart";
+import Product from "./components/Product";
 import { discountedData, productData } from "./api/Api";
 
 import {
@@ -32,6 +33,12 @@ const router = createBrowserRouter([
         element: <Home />,
         loader: productData,
       },
+
+      {
+        path: "/product/:id",
+        element: <Product />,
+      },
+
       {
         path: "/cart",
         element: <Cart />,
