@@ -1,5 +1,7 @@
+import React from "react";
 import ProductCard from "./ProductCard";
-function Products() {
+function Products({ products }) {
+  console.log(products);
   return (
     <div className="py-14">
       <div className="flex items-center flex-col gap-4">
@@ -13,8 +15,10 @@ function Products() {
           <span className="font-bold">30%</span> off!
         </p>
       </div>
-      <div className="max-w-screen-xl mx-auto">
-        <ProductCard></ProductCard>
+      <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-3 gap-12">
+        {products.map((item) => (
+          <ProductCard key={item.id} product={item}></ProductCard>
+        ))}
       </div>
     </div>
   );

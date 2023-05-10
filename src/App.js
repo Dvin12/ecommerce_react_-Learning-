@@ -3,7 +3,7 @@ import Home from "./pages/home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Cart from "./pages/Cart";
-import { discountedData } from "./api/Api";
+import { discountedData, productData } from "./api/Api";
 
 import {
   createBrowserRouter,
@@ -11,7 +11,6 @@ import {
   RouterProvider,
   ScrollRestoration,
 } from "react-router-dom";
-import { discountedData } from "./api/Api";
 
 function Layout() {
   return (
@@ -31,7 +30,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: discountedData,
+        loader: productData,
       },
       {
         path: "/cart",
