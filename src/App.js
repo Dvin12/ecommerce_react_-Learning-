@@ -3,6 +3,7 @@ import Home from "./pages/home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Cart from "./pages/Cart";
+import Login from "./pages/Login";
 import Product from "./components/Product";
 import { productData } from "./api/Api";
 
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
     ],
   },

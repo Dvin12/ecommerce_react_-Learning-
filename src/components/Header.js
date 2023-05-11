@@ -36,13 +36,15 @@ function Header() {
                 </div>
               </li>
             </Link>
-            <li className="cursor-pointer">
-              <img
-                className="w-12 h-12 rounded-full"
-                src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
-                alt="userProfile"
-              ></img>
-            </li>
+            <Link to="/login">
+              <li className="cursor-pointer">
+                <img
+                  className="w-12 h-12 rounded-full"
+                  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
+                  alt="userProfile"
+                ></img>
+              </li>
+            </Link>
           </ul>
         </div>
       </div>
