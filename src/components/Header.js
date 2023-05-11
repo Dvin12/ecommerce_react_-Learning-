@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const productData = useSelector((state) => state.store.productData);
+  const userInfo = useSelector((state) => state.store.userInfo);
   return (
     <header className="w-full h-20 bg-white border-b-[1px] border-b-gray-800 font-titleFont sticky top-0 z-50">
       <div className="max-w-screen-xl h-full mx-auto flex justify-between items-center">
@@ -39,12 +40,19 @@ function Header() {
             <Link to="/login">
               <li className="cursor-pointer">
                 <img
-                  className="w-12 h-12 rounded-full"
-                  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
+                  className="w-8 h-8 rounded-full"
+                  src={
+                    userInfo
+                      ? userInfo.image
+                      : "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-grey-photo-placeholder-illustrations-vectors-default-avatar-profile-icon-grey-photo-placeholder-99724602.jpg"
+                  }
                   alt="userProfile"
                 ></img>
               </li>
             </Link>
+            {userInfo && (
+              <p className="font-semibold text-sm">{userInfo.name}</p>
+            )}
           </ul>
         </div>
       </div>

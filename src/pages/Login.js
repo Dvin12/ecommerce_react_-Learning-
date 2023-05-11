@@ -6,8 +6,14 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
+import { ToastContainer, toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { addUser, removeUser } from "../redux/storeSlice";
+import { useNavigate } from "react-router";
 
 function Login() {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const auth = getAuth();
   const provider = new GoogleAuthProvider();
   const handleGoogleLogin = (e) => {
@@ -19,8 +25,17 @@ function Login() {
         const token = credential.accessToken;
         // The signed-in user info.
         const user = result.user;
-        // IdP data available using getAdditionalUserInfo(result)
-        // ...
+        dispatch(
+          addUser({
+            id: user.id,
+            name: user.displayName,
+            email: user.email,
+            image: user.photoURL,
+          })
+        );
+        setTimeout(() => {
+          navigate("/");
+        }, 1500);
       })
       .catch((error) => {
         // Handle Errors here.
@@ -33,6 +48,17 @@ function Login() {
         // ...
       });
   };
+
+  const handleSignOut = () => {
+    signOut(auth)
+      .then(() => {
+        toast.success("You have sign out!");
+        dispatch(removeUser());
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="w-full flex flex-col items-center justify-center gap-10 py-20">
       <div className="w-full flex items-center justify-center gap-10">
@@ -43,7 +69,10 @@ function Login() {
           <FcGoogle className="text-4xl"></FcGoogle>
           <span>Sign in With Google</span>
         </button>
-        <button className="bg-black text-white py-3 px-8 rounded-md hover:bg-gray-600 duration-300">
+        <button
+          onClick={handleSignOut}
+          className="bg-black text-white py-3 px-8 rounded-md hover:bg-gray-600 duration-300"
+        >
           Sign Out
         </button>
       </div>
@@ -57,6 +86,18 @@ function Login() {
           Sign Out
         </button>
       </div>
+      <ToastContainer
+        position="top-left"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      ></ToastContainer>
     </div>
   );
 }
