@@ -7,8 +7,8 @@
       "processor": "Intel Core i5-1135G7",
       "ram": "8 GB DDR4",
       "storage": "256 GB SSD",
-      "price": "$699.99",
-      "discounted_price": "$489.99",
+      "price": "699.99",
+      "discounted_price": "489.99",
       "image": "/assets/images/Inspiron15.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat. Bibendum at varius vel pharetra vel turpis. Lobortis feugiat vivamus at augue eget arcu dictum."
     },
@@ -19,8 +19,8 @@
       "processor": "Intel Core i7-1165G7",
       "ram": "16 GB DDR4",
       "storage": "512 GB SSD",
-      "price": "$1,099.99",
-      "discounted_price": "$699.99",
+      "price": "1,099.99",
+      "discounted_price": "699.99",
       "image": "/assets/images/Pavilionx360.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat. Bibendum at varius vel pharetra vel turpis. Lobortis feugiat vivamus at augue eget arcu dictum."
     },
@@ -31,8 +31,8 @@
       "processor": "AMD Ryzen 7 Pro 4750U",
       "ram": "16 GB DDR4",
       "storage": "512 GB SSD",
-      "price": "$1,399.99",
-      "discounted_price": "$1119.99",
+      "price": "1,399.99",
+      "discounted_price": "1119.99",
       "image": "/assets/images/ThinkPadT14s.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat. Bibendum at varius vel pharetra vel turpis. Lobortis feugiat vivamus at augue eget arcu dictum."
     },
@@ -43,8 +43,8 @@
       "processor": "M1 chip with 8-core CPU",
       "ram": "8 GB unified memory",
       "storage": "256 GB SSD",
-      "price": "$999.99",
-      "discounted_price": "$979.99",
+      "price": "999.99",
+      "discounted_price": "979.99",
       "image": "/assets/images/MacBookAir.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat. Bibendum at varius vel pharetra vel turpis. Lobortis feugiat vivamus at augue eget arcu dictum."
     },
@@ -55,8 +55,8 @@
       "processor": "Intel Core i7-1165G7",
       "ram": "16 GB LPDDR4X",
       "storage": "1 TB PCIe NVMe SSD",
-      "price": "$1,499.99",
-      "discounted_price": "$909.99",
+      "price": "1,499.99",
+      "discounted_price": "909.99",
       "image": "/assets/images/ZenBook.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat. Bibendum at varius vel pharetra vel turpis. Lobortis feugiat vivamus at augue eget arcu dictum."
     },
@@ -67,8 +67,8 @@
       "model": "EOS Rebel T7",
       "sensor": "24.1 MP APS-C CMOS",
       "iso_range": "100-6400",
-      "price": "$449.99",
-      "discounted_price": "$629.99",
+      "price": "449.99",
+      "discounted_price": "629.99",
       "image": "/assets/images/E0SRebel.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat. Bibendum at varius vel pharetra vel turpis. Lobortis feugiat vivamus at augue eget arcu dictum."
     },
@@ -78,8 +78,8 @@
       "model": "D5600",
       "sensor": "24.2 MP APS-C CMOS",
       "iso_range": "100-25600",
-      "price": "$799.99",
-      "discounted_price": "$524.99",
+      "price": "799.99",
+      "discounted_price": "524.99",
       "image": "/assets/images/D5600.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat. Bibendum at varius vel pharetra vel turpis. Lobortis feugiat vivamus at augue eget arcu dictum."
     },
@@ -89,8 +89,8 @@
       "model": "Alpha a7 III",
       "sensor": "24.2 MP Full-Frame Exmor R CMOS",
       "iso_range": "100-51200",
-      "price": "$1,999.99",
-      "discounted_price": "$1049.99",
+      "price": "1,999.99",
+      "discounted_price": "1049.99",
       "image": "/assets/images/Alphaa7.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat. Bibendum at varius vel pharetra vel turpis. Lobortis feugiat vivamus at augue eget arcu dictum."
     },
@@ -100,10 +100,9 @@
       "model": "X-T4",
       "sensor": "26.1 MP APS-C X-Trans CMOS 4",
       "iso_range": "160-12800",
-      "price": "$1,699.99",
-      "discounted_price": "$629.99",
-      "image": "/assets/images/X-T4.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat. Bibendum at varius vel pharetra vel turpis. Lobortis feugiat vivamus at augue eget arcu dictum."
+      "price": "1,699.99",
+      "discounted_price": "629.99",
+      "image": "/assets/images/X-T4.jpg"
     }
   ]
 }

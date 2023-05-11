@@ -75,6 +75,7 @@ function Product() {
                       model: details.model,
                       image: details.image,
                       price: details.price,
+                      discounted_price: details.discounted_price,
                       quantity: baseAmount,
                       description: details.description,
                     })

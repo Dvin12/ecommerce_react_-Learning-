@@ -53,6 +53,7 @@ function ProductCard({ product }) {
                     model: product.model,
                     image: product.image,
                     price: product.price,
+                    discounted_price: product.discounted_price,
                     quantity: 1,
                     description: product.description,
                   })
